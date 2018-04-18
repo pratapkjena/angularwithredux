@@ -1,0 +1,24 @@
+<div style="background-color:#5DBCD2">
+<h1 style="text-align: center">Redux (State Management tool) in Angular 5</h1>
+</div>
+<div style="margin-top:10px"></div>
+<table class="table table-bordered table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Author</th>
+    <th>URL</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tuto of tutorials | async ;let i=index">
+      <td>{{tuto.name}}</td>
+      <td>{{tuto.description}}</td>
+      <td>{{tuto.author}}</td>
+      <td><a>{{tuto.url}}</a></td>
+      <td><button (click)="deleteTutorial(i)" class="btn btn-primary">DELETE</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
